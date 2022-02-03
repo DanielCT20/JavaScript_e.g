@@ -1,0 +1,20 @@
+{
+	"manifest_version":2,
+	"name":"FIRSTEXT",
+	"version":"1.0",
+	"description":"creando una extension",
+	"author":"Daniel Caso",
+	"icons": {
+		"16":"icon16.png",
+		"128":"icon128.png"
+	},
+
+	"browser_action":{
+		"default_icon":"icon16.png",
+		"default_popup":"mensaje.html",
+		"default_title":"extension"
+
+	}
+
+
+}

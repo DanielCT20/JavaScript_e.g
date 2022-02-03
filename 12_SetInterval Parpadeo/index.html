@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container" style="background-color: chartreuse;width: 400px;height: 400px;">
+		
+		<div>
+			<a href=""><button id="yes" class="yes">YES
+						</button></a>
+			<video src="">holaperoo</video>
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore repudiandae temporibus delectus natus laudantium beatae placeat quod, ea at sed nam soluta earum corporis magnam qui? Incidunt blanditiis sit enim.
+		</p>
+	</div>
+
+	<script type="text/javascript">
+		const changeColor=document.querySelector(".container");
+		function color(){
+			changeColor.style.backgroundColor="blue";
+		}
+		const button=document.querySelector('.yes')
+		button.addEventListener("click",()=>{changeColor.style.backgroundColor="blue"});
+		
+		setInterval(function(){button.click();}, 100);
+
+
+	</script>
+</body>
+</html>
