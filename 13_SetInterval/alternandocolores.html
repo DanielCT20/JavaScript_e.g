@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Ejemplo de setInterval/clearInterval</title>
+  <script>
+    var nIntervId;
+
+    function cambiaDeColor() {
+      nIntervId = setInterval(flasheaTexto, 1000);
+    }
+
+      //primero evalua la condicion del parentise luego le asigna true o false 
+      // oElem.style.color =( oElem.style.color == 'red') si es verdad azul si ef falso rojo
+      // oElem.style.color =( oElem.style.color == 'red') inicialmente es false por que no tiene estilo se va primero al rojo luego al azul por que ahora es rojo
+    function flasheaTexto() {
+      var oElem = document.getElementById('mi_mensaje');
+      oElem.style.color =(oElem.style.color=='violet') ? 'red' : 'violet';
+    }
+
+    function detenerCambioDeColor() {
+      clearInterval(nIntervId);
+
+    }
+
+    // var blinkCounter = 0;
+    // function blinkElement(){
+    //       var item = document.getElementById('item');
+    //       var color = item.style.color;
+    //       item.style.color = (blinkCounter % 2)? '#000' : '#f00';
+    //       blinkCounter++;
+    // }
+
+    // setInterval(blinkElement,1000);   
+
+    </script>
+  </head>
+  <body onload="cambiaDeColor();">
+    <div id="mi_mensaje">
+      <p>¡Hola mundo!</p>
+    </div>
+    <!-- <div id="item">Hello World</div> -->
+
+    <button onclick="detenerCambioDeColor();">Detener</button>
+  </body>
+  </html>
+
+
+<!-- = -->

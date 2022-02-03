@@ -1,0 +1,21 @@
+<!-- Reference https://www.youtube.com/watch?v=JzRr-NF8EII -->
+<input type="button" value="IniciarContinuar" onclick="jsIniciarContinuar()">
+<input type="button" value="Pausar" onclick="jsPausar()">
+<div id="mensajes"></div>
+
+<script>
+    var i = 0;
+    var a;
+
+    // "\n"  expresion regualr para  crear saltar linea
+    function jsIniciarContinuar() {
+        a = setInterval(function() {
+            cadena = " Num: " + (i++);
+            document.getElementById("mensajes").innerText += cadena;
+        }, 1000)
+    }
+
+    function jsPausar() {
+        clearInterval(a)
+    }
+</script>
